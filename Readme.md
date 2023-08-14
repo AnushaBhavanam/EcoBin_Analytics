@@ -1,4 +1,4 @@
-# EcoClassifier Flask App README
+# EcoBin Analytics Flask App README
 
 The Waste Classifier Flask App is a web application that utilizes a deep learning model to classify images of waste materials as either "Compost Material" or "Recyclable Material." This app is built using the Flask framework and Python programming language. It provides a user-friendly interface where users can upload images and receive real-time predictions about the type of waste material depicted in the image.
 
