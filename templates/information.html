@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Website</title>
+
+      <link href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="/css/style_information.css">
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="left-item"><img src="/images/logo.jpg" alt="Logo">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/">HOME</a></li>
+<!--          <li><a href="/about">MODEL INFO</a></li>-->
+          <li><a href="/statistics">STATISTICS</a></li>
+          <li><a href="/model">CLASSIFICATION</a></li>
+          <li><a href="/team">TEAM</a></li>
+        </ul>
+      </nav>
+      <div class="right-item">CODE CRUSADERS</div>
+    </header>
+  </body>
+<main>
+    <div class="container">
+    <form id="upload-file" method="post" enctype="multipart/form-data">
+        <label for="imageUpload" class="upload-label">
+            Choose...
+        </label>
+        <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg">
+    </form>
+
+    <div class="image-section" style="display:none;">
+        <div class="img-preview">
+            <div id="imagePreview">
+            </div>
+        </div>
+        <div>
+            <button type="button" class="btn btn-primary btn-lg " id="btn-predict">Predict!</button>
+        </div>
+    </div>
+
+    <div class="loader" style="display:none;"></div>
+
+    <h3 id="result">
+        <span> </span>
+    </h3>
+
+</div>
+</main>
+<footer>
+    <script src="/js/main.js" type="text/javascript"></script>
+</footer>
+</html>
